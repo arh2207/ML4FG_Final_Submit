@@ -1,7 +1,29 @@
-From:
-https://www.proteinatlas.org/about/assays+annotation
+A Pipeline for Single-Cell Cluster Analysis
 
 --------------------------------------------------------------------------------
+
+The data is also available on Google Drive here: https://drive.google.com/drive/folders/1UgMCUQZf2arqn1XnzBTR0x-3Uf2AHYX7?usp=sharing
+
+Note to the grader:
+Due to the long runtime of some algorithms in the pipeline, we have also uploaded object outputs from the pipeline, as well as have commented out code where the functions with long runtimes are run.  The rest of the experiment is intended to be generated on your machine de novo.  In addition to being uploaded on Google Drive, the data are already located in the directory structure for the Github repo, so manually downloading from the Google Drive is redundant.  Important directory structures and R files:
+
+Working directory ‘wd’ should be the base Github directory
+Put any ‘*.R’ files in wd/Rscripts/.
+Put any tissue counts ‘*.rds’ files in wd/tissue_counts/.
+Keep the ‘hpa_meta-data.rds’ in wd/.
+
+apcluster.R
+This R file does all package downloading, loads packages, runs the pipeline, and generates all data figures and tables in the wd/tissue_analysis/. directory.  
+Note: to run this script on the PBMC vs lung set, simply set ‘tissue.name’ on line 65 to ‘lung’ from ‘pbmc’.  
+Note: You must set the working directory with setwd() on line 20.
+
+pipeline.R
+This contains the pipeline with various functions called in apcluster.R.  This file does not need to be touched or modified in any way, but it should be kept in wd/Rscripts/.
+
+--------------------------------------------------------------------------------
+
+Data From:
+https://www.proteinatlas.org/about/assays+annotation
 
 Tissue Cell Type: Using GTEx bulk RNAseq data to profile gene cell type specificity
 
