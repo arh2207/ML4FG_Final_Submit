@@ -1,0 +1,5 @@
+,Min,25th,Median,75th,Max
+Spearman,37,67,77,125,4400
+Pearson,32,61,96,261,4400
+Manhattan,12,82,330,980,4400
+Euclidean,29,70,132,334,4400
